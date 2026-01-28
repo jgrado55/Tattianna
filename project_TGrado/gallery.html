@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Photo Gallery 💞 - Joel & Tattianna</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <style>
+    body {
+      background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
+      margin: 0;
+      font-family: 'Georgia', serif;
+    }
+
+    header {
+      position: relative;
+      padding: 100px 20px;
+      text-align: center;
+      color: white;
+      background: linear-gradient(rgba(199, 21, 133, 0.55), rgba(199, 21, 133, 0.35)),
+                  url('https://images.pexels.com/photos/301485/pexels-photo-301485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover no-repeat;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.25);
+      z-index: 1;
+    }
+
+    header h1, header p {
+      position: relative;
+      z-index: 2;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+
+    header h1 {
+      font-size: 3.2em;
+      margin: 0 0 10px;
+    }
+
+    header p {
+      font-size: 1.4em;
+      margin: 0;
+      font-style: italic;
+    }
+
+    .gallery-container {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .gallery-item {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(199, 21, 133, 0.2);
+      transition: all 0.4s ease;
+      text-align: center;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(199, 21, 133, 0.35);
+    }
+
+    .photo-container {
+      height: 380px;          /* Uniform height – adjust if needed */
+      overflow: hidden;
+      position: relative;
+    }
+
+    .photo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;      /* Crops to fit perfectly without distortion */
+      object-position: center;
+      display: block;
+    }
+
+    .caption {
+      padding: 15px 10px;
+      font-size: 1.1em;
+      color: #c71585;
+      font-style: italic;
+      min-height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin: 30px 15px;
+      padding: 14px 35px;
+      background: #c71585;
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 1.2em;
+      transition: all 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background: #d81e5b;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(216, 30, 91, 0.4);
+    }
+
+    .gallery-note {
+      text-align: center;
+      font-size: 1.3em;
+      color: #8b008b;
+      margin: 40px 0 60px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Our Love in Pictures 💖</h1>
+    <p>Joel & Tattianna – Every stolen glance, every sweet moment, forever captured</p>
+  </header>
+
+  <div class="gallery-container">
+    <div style="text-align: center; margin-bottom: 40px;">
+      <a href="index.html" class="back-btn">← Back to My Love Letter</a>
+    </div>
+
+    <p class="gallery-note">These are the moments that make my heart skip—thank you for being my everything, Tattianna ♡</p>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item">
+        <div class="photo-container">
+          <img src="images/IMG_5443.jpg" alt="Us cuddling under the covers">
+        </div>
+        <div class="caption">Snuggled up on New Years Eve—my favorite place is right here with you 💕</div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="photo-container">
+          <img src="images/IMG_2730.heic" alt="Passionate kiss in the dark">
+        </div>
+        <div class="caption">That electric moment when the world disappears and it's just us 🔥</div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="photo-container">
+          <img src="images/IMG_4183.jpg" alt="Silly kitchen moment with trash bag">
+        </div>
+        <div class="caption">It will always be you who I hold in my arms ❤️</div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="photo-container">
+          <img src="images/IMG_3163.heic" alt="Cheek-to-cheek selfie">
+        </div>
+        <div class="caption">Cheek to cheek, heart to heart—always better when I'm next to you 🥰</div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="photo-container">
+          <img src="images/IMG_4616.jpg" alt="Playful tongue-out kiss">
+        </div>
+        <div class="caption">Your silly, playful side makes me fall harder every single time 😘</div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="photo-container">
+          <img src="images/IMG_4773.jpg" alt="Cheek kiss on the bed">
+        </div>
+        <div class="caption">Having your kisses is all I need to be happy 💖</div>
+      </div>
+
+    </div>
+
+    <div style="text-align: center; margin-top: 60px;">
+      <a href="index.html" class="back-btn">Back to My Love Letter →</a>
+    </div>
+  </div>
+
+  <footer style="background: #c71585; color: white; text-align: center; padding: 40px; margin-top: 80px; font-size: 1.2em;">
+    Made with every beat of my heart ♡ Joel for Tattianna Nora Mariah Gonzalez
+  </footer>
+
+</body>
+</html>
